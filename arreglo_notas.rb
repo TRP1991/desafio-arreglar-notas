@@ -18,3 +18,14 @@ Pistas: Para resolver este problema tenemos dos grandes pasos
 
 =end 
 
+notas = [5, 7, 1, 3, 5, 8, 9, 'N.A', 'N.A', 3]
+notas_transformar = [ ] #se transforman notas 
+notas.each do |nota|
+    if nota == 'N.A'
+        notas_transformar.push 2
+    else
+        notas_transformar.push nota
+    end
+end
+
+puts notas_transformar.sum / notas_transformar.count.to_f #se calcula el promedio de notas 
